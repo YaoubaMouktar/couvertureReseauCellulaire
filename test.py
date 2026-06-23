@@ -48,14 +48,17 @@ np.set_printoptions(
 print(grid.get_cells()[20:31,20:31])
 
 # Affichage de la heatmap
+# fig = show_heatmap(
+#     grid.get_cells()
+# )
 fig = show_heatmap(
-    grid.get_cells()
+    grid
 )
 
 print("Couverture :", coverage_percentage(grid.get_cells()), "%")
-print("Cellules couvertes :", covered_cells(grid.get_cells()))
+#print("Cellules couvertes :", covered_cells(grid.get_cells()))
 print("Zones blanches :", uncovered_cells(grid.get_cells()))
-print("Signal moyen :", average_signal(grid.get_cells()))
+#print("Signal moyen :", average_signal(grid.get_cells()))
 fig.show()
 
 stations = [

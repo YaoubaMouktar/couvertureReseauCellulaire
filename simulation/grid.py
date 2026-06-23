@@ -10,9 +10,21 @@ class Grid:
 
         self.obstacles = []
 
+        self.stations = []
+
+        self.users = []
+
     def get_cells(self):
         return self.cells
 
+    def set_stations(self, stations):
+
+        self.stations = stations
+
+    def set_users(self, users):
+
+        self.users = users
+        
     def add_obstacle(self, obstacle):
 
         self.obstacles.append(obstacle)
